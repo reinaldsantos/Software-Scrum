@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Scrum</title>
+    <link rel="stylesheet" href="/stl.css">
+
+</head>
+<body>
+
+    <h1><span>Papeis scrum</span></h1>
+    <div class="container">
+        <div class="card">
+            <h3>Scrum Master 🧑‍🏫</h3>
+            <ul>
+                <li>Atua como facilitador do time.</li>
+                <li>Remove impedimentos.</li>
+                <li>Reforça a aplicação do Scrum.</li>
+                <li>Ajuda o time a se autogerenciar.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Product Owner (PO) 🏗️</h3>
+            <ul>
+                <li>Representa os interesses do cliente.</li>
+                <li>Gerencia e prioriza o Product Backlog.</li>
+                <li>Define a visão do produto.</li>
+                <li>Aceita ou rejeita entregas do time.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Time de Desenvolvimento 👨‍💻👩‍💻</h3>
+            <ul>
+                <li>Time multifuncional e auto-organizado.</li>
+                <li>Responsável por desenvolver o produto.</li>
+                <li>Trabalha em conjunto para atingir metas.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h1><span>Eventos Scrum</span></h1>
+    <div class="container">
+        <div class="card">
+            <h3>Sprint</h3>
+            <p>Período fixo (1 a 4 semanas) para entregar um incremento utilizável.</p>
+        </div>
+
+        <div class="card">
+            <h3>Sprint Planning</h3>
+            <p>Definição do que será entregue na Sprint.</p>
+        </div>
+
+        <div class="card">
+            <h3>Daily Scrum</h3>
+            <p>Reunião curta (máx. 15 min) para alinhamento diário.</p>
+        </div>
+
+        <div class="card">
+            <h3>Sprint Review</h3>
+            <p>O time apresenta o que foi feito e coleta feedback.</p>
+        </div>
+
+        <div class="card">
+            <h3>Retrospectiva da Sprint</h3>
+            <p>Reflexão do time sobre melhorias.</p>
+        </div>
+    </div>
+
+    <h1><span >Artefatos do Scrum</span></h1>
+    <div class="container">
+        <div class="card">
+            <h3>Product Backlog</h3>
+            <p>Lista priorizada de funcionalidades e melhorias desejadas.</p>
+        </div>
+
+        <div class="card">
+            <h3>Sprint Backlog</h3>
+            <p>Itens do Product Backlog escolhidos para a Sprint.</p>
+        </div>
+
+        <div class="card">
+            <h3>Incremento</h3>
+            <p>Produto funcional e potencialmente entregável.</p>
+        </div>
+    </div>
+
+    <h1><span>Scrum x Outras Metodologias Ágeis</span></h1>
+    <table>
+        <tr>
+            <th>Característica</th>
+            <th>Scrum</th>
+            <th>Kanban</th>
+            <th>XP (Extreme Programming)</th>
+        </tr>
+        <tr>
+            <td>Estrutura fixa de eventos</td>
+            <td>✅ Sim</td>
+            <td>❌ Não</td>
+            <td>✅ Sim</td>
+        </tr>
+        <tr>
+            <td>Papéis definidos</td>
+            <td>✅ Sim</td>
+            <td>❌ Não</td>
+            <td>✅ Sim</td>
+        </tr>
+        <tr>
+            <td>Sprints cíclicas</td>
+            <td>✅ Sim</td>
+            <td>❌ Não (fluxo contínuo)</td>
+            <td>✅ Sim</td>
+        </tr>
+        <tr>
+            <td>Enfatiza código de alta qualidade</td>
+            <td>✅ Sim</td>
+            <td>❌ Não</td>
+            <td>✅ Sim (testes automatizados)</td>
+        </tr>
+    </table>
+
+    <!-- Botão para mudar a cor de fundo -->
+    <button id="changeBackgroundBtn" onclick="changeBackgroundColor()">Alterar Cor de Fundo</button>
+
+    <script>
+        function changeBackgroundColor() {
+            const colors = [
+                '#FF6347', // Tomate
+                '#98FB98', // Verde claro
+                '#20B2AA', // Azul verde
+                '#FFD700', // Ouro
+                '#D3D3D3'  // Cinza claro
+            ];
+
+            // Escolhe uma cor aleatória do array de cores
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            // Aplica a nova cor de fundo
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+
+</body>
+</html>
